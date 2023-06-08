@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark">
+    <title>Login</title>
+    
+
+    <link rel="icon" type="image/png" sizes="64x64"
+    href="./images/coffee.png">
+
+        <!-- Remix icons   -->
+        <link href="
+        https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" 
+        rel="stylesheet">
+
+        <!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body onload="myFunction()" style="margin:0;">
+
+
+  <div class="center-body">
+    <div id="loader-circle-9">Loading
+      <span></span>
+    </div>
+    </div>
+
+
+  <div style="display:none;" id="myDiv" class="animate-bottom">
+  
+
+
+
+  <div class="hot_coffee_cup image_divs">
+
+    <div class="main-form-container">
+      
+
+      <div class="logo-container">
+        <img src="images/coffee_logo.png" alt="" class="logo_image">
+      </div>
+        
+      
+          <div class="form-inner">
+
+            <form action="">
+
+
+              <div class="group">
+  
+  
+                <input type="text" class="textbox" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+
+                <label>
+                  <i class="fa fa-user icon">
+                </i> 
+                  Name
+                </label>
+
+              </div>
+              
+                
+              <div class="group">      
+                <input type="text" class="textbox" required>
+                <span class="highlight"></span> 
+                <span class="bar"></span>
+                <label>
+                  <i class="fa fa-envelope icon">
+                </i>
+                  Email
+                </label>
+              </div>
+
+
+
+
+              <div class="group">      
+                <input type="password" class="textbox" required>
+                <span class="highlight"></span> 
+                <span class="bar"></span>
+                <label>
+                  <i class="fa fa-key icon">
+                </i>
+                  Password
+                </label>
+              </div>
+
+              <div class="button-container">
+                <button type="submit" class="btn">
+                  Login
+                  <i class="fa fa-sign-in slide-right bt-i">
+                  </i>
+                </button>
+              </div>
+
+
+              <div class="button-container">
+                <button type="reset" class="btn">
+                  Clear
+                  <i class="fa fa-trash slide-right bt-i">
+                  </i>
+                </button>
+              </div>
+
+            </form>
+            
+  
+          </div>
+      </div>
+
+  </div>
+
+
+
+</div>
+
+
+
+    
+
+<script>
+  var myVar;
+  
+  function myFunction() {
+    myVar = setTimeout(showPage, 3000);
+  }
+  
+  function showPage() {
+    document.getElementById("loader-circle-9").style.display = "none";
+    document.getElementById("myDiv").style.display = "block";
+  }
+  </script>
+
+</body>
+</html>
